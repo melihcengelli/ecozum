@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Input } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
+import { MailOutlined } from '@ant-design/icons';
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
+import { Typography } from 'antd';
+import { Button } from 'antd';
+
+
+
+const { Text} = Typography;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <div id="open">
+          <div id="openinside">
+            <Text id="openinput" strong>Adınız Soyadınız</Text>
+            <Input id="openinputs" size="large" placeholder="" prefix={<UserOutlined />} required />
+            <br></br>
+            <br></br>
+            <Text id="openinput" strong>Email Adresiniz</Text>
+            <Input id="openinputs" size="large" placeholder="" prefix={<MailOutlined />} required />
+            <br></br>
+            <br></br>
+            <Button type="primary" shape="round"  size={'large'}>
+              Devam Et
+            </Button>
+
+          </div>
+        </div>
+            
+      </div>
+    </>
   );
 }
 
