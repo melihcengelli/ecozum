@@ -1,26 +1,107 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../Components/Header'
 import { Typography } from 'antd';
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import { Button } from 'antd';
-
+import { style } from '@mui/system';
 
 function Paketler() {
-    const { Text} = Typography;
+    const { Text} = Typography;  
+    const [paketid, setPaketId] = useState("paketboxes")
+    const addbordercolor = (e) => {
+        if (e.target.className=="paketboxes2"){
+            e.target.className="paketboxes"
+
+        } else {
+            e.target.className="paketboxes2"
+        }
+        
+    }
   return (
     <div className='Paketler'>
         <Header/>
         <div id="paketlist">
             <div id="paketbox">
                 <div id="upside">
-                    <div id="paketboxes"></div>
-                    <div id="paketboxes"></div>
-                    <div id="paketboxes"></div>
-                    <div id="paketboxes"></div>
-                    <div id="paketboxes"></div>
-                    <div id="paketboxes"></div>
-                    <div id="paketboxes"></div>
-                    <div id="paketboxes"></div>
+                    <div id="1" className={paketid} onClick={addbordercolor}>
+                        <div id="gorsel" style={{pointerEvents:'none'}}>
+                            Görsel
+                        </div>
+                        <div id="paketicerik" style={{pointerEvents:'none'}}>
+                            <div id="paketdetay">
+                                <span id="paketadi">Paket Adı</span>
+                                <span id="fiyat">336₺</span>
+                            </div>
+                            <ul id="listdetayul">
+                                <li id="listdetay">Detay1</li>
+                                <li id="listdetay">Detay2</li>
+                                <li id="listdetay">Detay3</li>
+                            </ul>
+                            <br></br>
+                            <hr></hr>
+                            <ul id="listdetayul">
+                                <li id="etiketdetay">Etiket 1</li>
+                                <li id="etiketdetay">Etiket 2</li>
+                                <li id="etiketdetay">Etiket 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="2" className={paketid} onClick={addbordercolor}>
+                        <div id="gorsel" style={{pointerEvents:'none'}}>
+                            Görsel
+                        </div>
+                        <div id="paketicerik" style={{pointerEvents:'none'}}>
+                            <div id="paketdetay">
+                                    <span id="paketadi">Paket Adı</span>
+                                    <span id="fiyat">336₺</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div id="3" className={paketid} onClick={addbordercolor}>
+                        <div id="gorsel" style={{pointerEvents:'none'}}>
+                            Görsel
+                        </div>
+                        <div id="paketicerik" style={{pointerEvents:'none'}}>
+                            <div id="paketdetay">
+                                    <span id="paketadi">Paket Adı</span>
+                                    <span id="fiyat">336₺</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div id="4" className={paketid} onClick={addbordercolor}>
+                        <div id="gorsel" style={{pointerEvents:'none'}}>
+                            Görsel
+                        </div>
+                        <div id="paketicerik" style={{pointerEvents:'none'}}>
+                            <div id="paketdetay">
+                                    <span id="paketadi">Paket Adı</span>
+                                    <span id="fiyat">336₺</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div id="5" className={paketid} onClick={addbordercolor}>
+                        <div id="gorsel" style={{pointerEvents:'none'}}>
+                            Görsel
+                        </div>
+                        <div id="paketicerik" style={{pointerEvents:'none'}}>
+                            <div id="paketdetay">
+                                    <span id="paketadi">Paket Adı</span>
+                                    <span id="fiyat">336₺</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div id="6" className={paketid} onClick={addbordercolor}>
+                        <div id="gorsel" style={{pointerEvents:'none'}}>
+                            Görsel
+                        </div>
+                        <div id="paketicerik" style={{pointerEvents:'none'}}>
+                            <div id="paketdetay">
+                                    <span id="paketadi">Paket Adı</span>
+                                    <span id="fiyat">336₺</span>
+                                </div>
+                            </div>
+                    </div>
+                    
 
 
                 </div>
