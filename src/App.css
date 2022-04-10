@@ -132,7 +132,7 @@
 
 
 #bottomtext {
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 #left {
@@ -145,7 +145,7 @@
 
 #paketbuton {
   float: right;
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 #gorsel{
@@ -269,6 +269,7 @@
 
 #kartisimsoyisiminput {
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 #sozlesmeicerigi {
@@ -283,7 +284,10 @@
 }
 
 #sozlesmebaslik, #kartbilgileribaslik {
-  margin: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+
 }
 #sepet {
   width: 300px;
@@ -346,4 +350,8 @@
   height: fit-content;
   justify-content:space-around;
   
+}
+
+#tutargoster {
+  font-weight: bold;
 }

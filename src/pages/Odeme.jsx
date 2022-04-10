@@ -23,21 +23,21 @@ function Odeme() {
             <br></br>
             <div id="kartbilgileribottomside">
               <div id="kartnumarası">
-                <p>Test</p>
+                <p>Kart Numarası</p>
                 <Input id="kartbilgileribottomsideitem" size="large" placeholder=""  required />
               </div>
               <div id="sonkullanma">
-                <p>Test</p>
+                <p>Son Kul. Tar.</p>
                 <Input id="kartbilgileribottomsideitem" size="large" placeholder=""  required />
               </div>
               <div id="cvv">
-                <p>Test</p>
+                <p>CVV/CVC</p>
                 <Input id="kartbilgileribottomsideitem" size="large" placeholder=""  required />
               </div>
 
             </div>
           </div>
-          <br></br>
+          
           <div id="sozlesme">
             <p id="sozlesmebaslik">Sözleşme</p>
             <p id="sozlesmeicerigi">
