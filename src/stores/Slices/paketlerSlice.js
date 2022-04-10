@@ -20,7 +20,7 @@ const initialState = {
 const apiurl =  'https://6249a1e8fd7e30c51c042ccb.mockapi.io/api/packages'
 
 // Get Packages
-export const getPackages = createAsyncThunk(apiurl+'/packages', async (_, thunkAPI) => {
+export const getPackages = createAsyncThunk(apiurl+'/paketler', async (_, thunkAPI) => {
     try {
         return await paketlerService.getPackages()
     } catch (error) {
@@ -44,6 +44,7 @@ export const packagesSlice = createSlice({
             state.isLoading = false
             state.isSuccess = true
             state.paketler.push(action.payload)
+            
         })
         .addCase(getPackages.rejected, (state,action)=> {
             state.isLoading = false

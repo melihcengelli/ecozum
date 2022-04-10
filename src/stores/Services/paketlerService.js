@@ -6,13 +6,13 @@ const API_URL = ' https://6249a1e8fd7e30c51c042ccb.mockapi.io/api/packages'
 const getPackages = async () => {
     const response = await axios.get(API_URL)
 
-    return console.log(response.data)
+    return response.data
     
 }
 
-const packagesService = {
+const paketlerService = {
     getPackages,
     
 }
 
-export default  packagesService
+export default  paketlerService
