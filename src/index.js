@@ -21,8 +21,8 @@ ReactDOM.render(
         } 
         />
         <Route 
-          path="/paketler"
-          exact
+          path="/paketler/:name"
+          
           element={
               <Paketler/>
         } 
@@ -30,6 +30,13 @@ ReactDOM.render(
         <Route 
           path="/odeme"
           exact
+          element={
+              <Paketler/>
+        } 
+        />
+
+        <Route 
+          path="/odeme/:id"
           element={
               <Odeme/>
         } 

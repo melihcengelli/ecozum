@@ -38,8 +38,8 @@ function App() {
   ]
 
   const buttonOnClick = () => {
-    console.log(firstInp,secondInp)
-    dispatch(signupUser(userData)).then(navigate('/paketler'))
+    
+    dispatch(signupUser(userData)).then(navigate('/paketler/'+firstInp))
   }
 
  
@@ -55,7 +55,7 @@ function App() {
             <br></br>
             <br></br>
             <Text id="openinput" strong>Email Adresiniz</Text>
-            <Input id="openinputs" size="large" placeholder="" prefix={<MailOutlined />} onChange={handleChangeSecondInp} required />
+            <Input id="openinputs" size="large" placeholder="" type="email" prefix={<MailOutlined />} onChange={handleChangeSecondInp} required />
             <br></br>
             <br></br>
             <Button type="primary" shape="round"  size={'large'} onClick={() => buttonOnClick()}>

@@ -36,6 +36,7 @@
   height: 70px;
   background-color: white;
   align-items: center;
+  justify-content: space-between;
 }
 
 #logo {
@@ -208,7 +209,16 @@
   justify-content:space-evenly;
   background-color: rgb(214, 209, 209);
 }
-.Odemeler {
+#tamamlandi{
+  display: flex;
+  flex-direction: row;
+  width: 100wh;
+  height: 100vh;
+  justify-content:center;
+  align-items: center;
+  background-color: rgb(214, 209, 209);
+}
+.Odemeler, .Tamamlandi {
   width:100vw;
   display: flex;
   flex-direction: column;
@@ -354,4 +364,35 @@
 
 #tutargoster {
   font-weight: bold;
+}
+
+#tamamlandibox {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 25px;
+}
+
+#tik {
+  color: green;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+#namearea {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+  
+}
+
+#namelabel {
+  margin-left: 5px;
 }
